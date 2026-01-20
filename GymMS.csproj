@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9019BF8C-EE9F-4DD9-815D-81D2C95A5F1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GymMS</RootNamespace>
+    <AssemblyName>GymMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Gym.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MethodsFW">
+      <HintPath>..\..\ClassLibraryNetFrmwrk\MethodsFW\bin\Debug\MethodsFW.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDelMembs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDelMembs.Designer.cs">
+      <DependentUpon>EditDelMembs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDelStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDelStaff.Designer.cs">
+      <DependentUpon>EditDelStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentData.Designer.cs">
+      <DependentUpon>EquipmentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment.Designer.cs">
+      <DependentUpon>Equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGym.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGym.Designer.cs">
+      <DependentUpon>FormGym.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignUp.Designer.cs">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GymStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GymStaff.Designer.cs">
+      <DependentUpon>GymStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GymMembs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GymMembs.Designer.cs">
+      <DependentUpon>GymMembs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembersFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembersFees.Designer.cs">
+      <DependentUpon>MembersFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MembsData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembsData.Designer.cs">
+      <DependentUpon>MembsData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffData.Designer.cs">
+      <DependentUpon>StaffData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffSalary.Designer.cs">
+      <DependentUpon>StaffSalary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDelMembs.resx">
+      <DependentUpon>EditDelMembs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDelStaff.resx">
+      <DependentUpon>EditDelStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentData.resx">
+      <DependentUpon>EquipmentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment.resx">
+      <DependentUpon>Equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGym.resx">
+      <DependentUpon>FormGym.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignUp.resx">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GymMembs.resx">
+      <DependentUpon>GymMembs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GymStaff.resx">
+      <DependentUpon>GymStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembersFees.resx">
+      <DependentUpon>MembersFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MembsData.resx">
+      <DependentUpon>MembsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffData.resx">
+      <DependentUpon>StaffData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffSalary.resx">
+      <DependentUpon>StaffSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GymFile1.md" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Down.png" />
+    <Content Include="Assets\img2.jpg" />
+    <Content Include="Assets\img3.jpg" />
+    <Content Include="Assets\person.png" />
+    <Content Include="Assets\Right.png" />
+    <Content Include="Gym.ico" />
+    <Content Include="Gym.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gym_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Gym.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
