@@ -66,7 +66,7 @@
             this.TSMExit});
             this.MenuStripGym.Location = new System.Drawing.Point(0, 0);
             this.MenuStripGym.Name = "MenuStripGym";
-            this.MenuStripGym.Size = new System.Drawing.Size(978, 109);
+            this.MenuStripGym.Size = new System.Drawing.Size(978, 104);
             this.MenuStripGym.TabIndex = 0;
             // 
             // TSMArrow
@@ -75,7 +75,7 @@
             this.TSMArrow.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.TSMArrow.Image = global::GymMS.Properties.Resources.Down;
             this.TSMArrow.Name = "TSMArrow";
-            this.TSMArrow.Size = new System.Drawing.Size(40, 105);
+            this.TSMArrow.Size = new System.Drawing.Size(40, 100);
             this.TSMArrow.Click += new System.EventHandler(this.TSMArrow_Click);
             // 
             // TSMGymMembs
@@ -90,35 +90,44 @@
             this.TSMGymMembs.Image = ((System.Drawing.Image)(resources.GetObject("TSMGymMembs.Image")));
             this.TSMGymMembs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMGymMembs.Name = "TSMGymMembs";
-            this.TSMGymMembs.Size = new System.Drawing.Size(163, 105);
+            this.TSMGymMembs.ShortcutKeyDisplayString = "";
+            this.TSMGymMembs.Size = new System.Drawing.Size(163, 100);
             this.TSMGymMembs.Text = "Gym Members";
             this.TSMGymMembs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             // 
             // TSMAddMembs
             // 
+            this.TSMAddMembs.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSMAddMembs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMAddMembs.Name = "TSMAddMembs";
-            this.TSMAddMembs.Size = new System.Drawing.Size(356, 46);
+            this.TSMAddMembs.Size = new System.Drawing.Size(366, 40);
             this.TSMAddMembs.Text = "Add Members";
             this.TSMAddMembs.Click += new System.EventHandler(this.GymMembsDDItems_Click);
             // 
             // TSMEditDelMembs
             // 
+            this.TSMEditDelMembs.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSMEditDelMembs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMEditDelMembs.Name = "TSMEditDelMembs";
-            this.TSMEditDelMembs.Size = new System.Drawing.Size(356, 46);
+            this.TSMEditDelMembs.Size = new System.Drawing.Size(366, 40);
             this.TSMEditDelMembs.Text = "Edit And Delete Members";
             this.TSMEditDelMembs.Click += new System.EventHandler(this.GymMembsDDItems_Click);
             // 
             // TSMMembsData
             // 
+            this.TSMMembsData.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSMMembsData.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMMembsData.Name = "TSMMembsData";
-            this.TSMMembsData.Size = new System.Drawing.Size(356, 46);
+            this.TSMMembsData.Size = new System.Drawing.Size(366, 40);
             this.TSMMembsData.Text = "Members Data";
             this.TSMMembsData.Click += new System.EventHandler(this.GymMembsDDItems_Click);
             // 
             // TSMMembsFees
             // 
+            this.TSMMembsFees.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSMMembsFees.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMMembsFees.Name = "TSMMembsFees";
-            this.TSMMembsFees.Size = new System.Drawing.Size(356, 46);
+            this.TSMMembsFees.Size = new System.Drawing.Size(366, 40);
             this.TSMMembsFees.Text = "Members Fees";
             this.TSMMembsFees.Click += new System.EventHandler(this.GymMembsDDItems_Click);
             // 
@@ -134,35 +143,39 @@
             this.TSMGymStaff.Image = ((System.Drawing.Image)(resources.GetObject("TSMGymStaff.Image")));
             this.TSMGymStaff.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMGymStaff.Name = "TSMGymStaff";
-            this.TSMGymStaff.Size = new System.Drawing.Size(125, 105);
+            this.TSMGymStaff.Size = new System.Drawing.Size(125, 100);
             this.TSMGymStaff.Text = "Gym Staff";
             this.TSMGymStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             // 
             // TSMAddStaff
             // 
+            this.TSMAddStaff.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMAddStaff.Name = "TSMAddStaff";
-            this.TSMAddStaff.Size = new System.Drawing.Size(318, 46);
+            this.TSMAddStaff.Size = new System.Drawing.Size(325, 40);
             this.TSMAddStaff.Text = "Add Staff";
             this.TSMAddStaff.Click += new System.EventHandler(this.GymStaffDDItems_Click);
             // 
             // TSMUpdDelStaff
             // 
+            this.TSMUpdDelStaff.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMUpdDelStaff.Name = "TSMUpdDelStaff";
-            this.TSMUpdDelStaff.Size = new System.Drawing.Size(318, 46);
+            this.TSMUpdDelStaff.Size = new System.Drawing.Size(325, 40);
             this.TSMUpdDelStaff.Text = "Edit And Delete Staff";
             this.TSMUpdDelStaff.Click += new System.EventHandler(this.GymStaffDDItems_Click);
             // 
             // TSMStaffData
             // 
+            this.TSMStaffData.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMStaffData.Name = "TSMStaffData";
-            this.TSMStaffData.Size = new System.Drawing.Size(318, 46);
+            this.TSMStaffData.Size = new System.Drawing.Size(325, 40);
             this.TSMStaffData.Text = "Staff Data";
             this.TSMStaffData.Click += new System.EventHandler(this.GymStaffDDItems_Click);
             // 
             // TSMStaffSalary
             // 
+            this.TSMStaffSalary.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMStaffSalary.Name = "TSMStaffSalary";
-            this.TSMStaffSalary.Size = new System.Drawing.Size(318, 46);
+            this.TSMStaffSalary.Size = new System.Drawing.Size(325, 40);
             this.TSMStaffSalary.Text = "Staff Salary";
             this.TSMStaffSalary.Click += new System.EventHandler(this.GymStaffDDItems_Click);
             // 
@@ -173,7 +186,7 @@
             this.TSMEquipment.Image = ((System.Drawing.Image)(resources.GetObject("TSMEquipment.Image")));
             this.TSMEquipment.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMEquipment.Name = "TSMEquipment";
-            this.TSMEquipment.Size = new System.Drawing.Size(128, 105);
+            this.TSMEquipment.Size = new System.Drawing.Size(128, 100);
             this.TSMEquipment.Text = "Equipment";
             this.TSMEquipment.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.TSMEquipment.Click += new System.EventHandler(this.TSMEquipment_Click);
@@ -184,7 +197,7 @@
             this.TSMDashboard.Image = ((System.Drawing.Image)(resources.GetObject("TSMDashboard.Image")));
             this.TSMDashboard.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMDashboard.Name = "TSMDashboard";
-            this.TSMDashboard.Size = new System.Drawing.Size(126, 105);
+            this.TSMDashboard.Size = new System.Drawing.Size(126, 100);
             this.TSMDashboard.Text = "Dashboard";
             this.TSMDashboard.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.TSMDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -196,24 +209,27 @@
             this.TSMExit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMLogout,
             this.TSMExitApp});
+            this.TSMExit.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMExit.Image = ((System.Drawing.Image)(resources.GetObject("TSMExit.Image")));
             this.TSMExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSMExit.Name = "TSMExit";
-            this.TSMExit.Size = new System.Drawing.Size(80, 105);
+            this.TSMExit.Size = new System.Drawing.Size(80, 100);
             this.TSMExit.Text = "Exit";
             this.TSMExit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             // 
             // TSMLogout
             // 
+            this.TSMLogout.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMLogout.Name = "TSMLogout";
-            this.TSMLogout.Size = new System.Drawing.Size(201, 46);
+            this.TSMLogout.Size = new System.Drawing.Size(270, 40);
             this.TSMLogout.Text = "Logout";
             this.TSMLogout.Click += new System.EventHandler(this.TSMExitDDItems_Click);
             // 
             // TSMExitApp
             // 
+            this.TSMExitApp.Font = new System.Drawing.Font("Andika", 10F, System.Drawing.FontStyle.Bold);
             this.TSMExitApp.Name = "TSMExitApp";
-            this.TSMExitApp.Size = new System.Drawing.Size(201, 46);
+            this.TSMExitApp.Size = new System.Drawing.Size(270, 40);
             this.TSMExitApp.Text = "Exit App";
             this.TSMExitApp.Click += new System.EventHandler(this.TSMExitDDItems_Click);
             // 

@@ -281,12 +281,13 @@
             // 
             // BtnSave
             // 
+            this.BtnSave.AutoSize = true;
             this.BtnSave.BackColor = System.Drawing.Color.Bisque;
             this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSave.Font = new System.Drawing.Font("Texturina", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnSave.Location = new System.Drawing.Point(270, 584);
+            this.BtnSave.Location = new System.Drawing.Point(270, 575);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(160, 50);
             this.BtnSave.TabIndex = 1;
@@ -296,12 +297,13 @@
             // 
             // BtnReset
             // 
+            this.BtnReset.AutoSize = true;
             this.BtnReset.BackColor = System.Drawing.Color.Bisque;
             this.BtnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReset.Font = new System.Drawing.Font("Texturina", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnReset.Location = new System.Drawing.Point(506, 584);
+            this.BtnReset.Location = new System.Drawing.Point(506, 575);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(160, 50);
             this.BtnReset.TabIndex = 2;

@@ -28,7 +28,7 @@ namespace GymMS
             {
                 try
                 {
-                    SetDGVRecord(null);
+                    SetDGVRecord(0);
                 }
                 catch (Exception ex)
                 {
@@ -111,10 +111,14 @@ namespace GymMS
                                     inscmd.Parameters.AddWithValue("@amnt", (int) NUDAmount.Value);
                                     inscmd.Parameters.AddWithValue("@dtins", DateTime.Today);
 
-                                    inscmd.ExecuteNonQuery();
+                                    int i = inscmd.ExecuteNonQuery();
                                     SetDGVRecord((int)NUDMembId.Value);
-                                    MessageBox.Show($"Fees Payment for {DTPFeesMonth.Text} Successfull", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                                    ClearFields();
+                                    if (i > 0)
+                                    {
+                                        MessageBox.Show($"Fees Payment for {DTPFeesMonth.Text} Successfull", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                                    }
+                                    
+
 
                                 }
                             }
@@ -174,9 +178,11 @@ namespace GymMS
             CmbBxGymTime.SelectedIndex = -1;
             CmbBxMembStatus.SelectedIndex = -1;
             DTPFeesMonth.ResetText();
+            NUDMembId.Value = 0;
             NUDAmount.Value = 0;
-
+            SetDGVRecord(0);
         }
+
 
         
     }

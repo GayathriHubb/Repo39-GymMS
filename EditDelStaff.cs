@@ -35,7 +35,7 @@ namespace GymMS
                         string seldata = "Select * From GymStaff Where StaffId = @stfid";
                         using (SqlCommand selcmd = new SqlCommand(seldata, sqlcon))
                         {
-                            selcmd.Parameters.AddWithValue("@membid", (int)NUDStaffId.Value);
+                            selcmd.Parameters.AddWithValue("@stfid", (int)NUDStaffId.Value);
 
                             SqlDataReader sdr = selcmd.ExecuteReader();
                             if (sdr.Read())
@@ -102,15 +102,19 @@ namespace GymMS
                             updcmd.Parameters.AddWithValue("@gndr", CmbBxGender.Text);
                             updcmd.Parameters.AddWithValue("@dob", DTPDOB.Value);
                             updcmd.Parameters.AddWithValue("@phnnum", MTBPhnNum.Text);
-                            updcmd.Parameters.AddWithValue("@email", TxtBxName.Text ?? string.Empty);
+                            updcmd.Parameters.AddWithValue("@email", TxtBxEmail.Text ?? string.Empty);
                             updcmd.Parameters.AddWithValue("@jndt", DTPJoinDate.Value);
                             updcmd.Parameters.AddWithValue("@addrss", TxtBxAddrss.Text.Trim());
-                            updcmd.Parameters.AddWithValue("@mbshpsts", CmbBxWorkStatus.Text);
+                            updcmd.Parameters.AddWithValue("@wrksts", CmbBxWorkStatus.Text);
                             updcmd.Parameters.AddWithValue("@stfid", (int) NUDStaffId.Value);
 
-                            updcmd.ExecuteNonQuery();
-                            MessageBox.Show("Staff Record Updated Successfully", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                            ClearFields();
+                            int i = updcmd.ExecuteNonQuery();
+                            if (i > 0) 
+                            {
+                                MessageBox.Show("Staff Record Updated Successfully", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                                ClearFields();
+                            }
+                            
                         }
                     }
                     catch (Exception ex)
@@ -138,9 +142,12 @@ namespace GymMS
                             {
                                 delcmd.Parameters.AddWithValue("@stfid", (int)NUDStaffId.Value);
 
-                                delcmd.ExecuteNonQuery();
-                                MessageBox.Show("Staff Record Deleted Successfully", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                                ClearFields();
+                                int i = delcmd.ExecuteNonQuery();
+                                if (i > 0)
+                                {
+                                    MessageBox.Show("Staff Record Deleted Successfully", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                                    ClearFields();
+                                }
                             }
 
                         }

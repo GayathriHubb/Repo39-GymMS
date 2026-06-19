@@ -48,6 +48,7 @@
             // 
             // BtnSignIn
             // 
+            this.BtnSignIn.AutoSize = true;
             this.BtnSignIn.BackColor = System.Drawing.Color.Bisque;
             this.BtnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -89,6 +90,7 @@
             // 
             // BtnReset
             // 
+            this.BtnReset.AutoSize = true;
             this.BtnReset.BackColor = System.Drawing.Color.Bisque;
             this.BtnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
@@ -98,13 +100,14 @@
             this.BtnReset.Location = new System.Drawing.Point(477, 425);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(160, 50);
-            this.BtnReset.TabIndex = 2;
+            this.BtnReset.TabIndex = 1;
             this.BtnReset.Text = "Clear";
             this.BtnReset.UseVisualStyleBackColor = false;
             this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // BtnSignUp
             // 
+            this.BtnSignUp.AutoSize = true;
             this.BtnSignUp.BackColor = System.Drawing.Color.Bisque;
             this.BtnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSignUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
@@ -249,6 +252,7 @@
             this.MaximizeBox = false;
             this.Name = "FormSignUp";
             this.Text = "Gym Management";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSignUp_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.PicBxGymPer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

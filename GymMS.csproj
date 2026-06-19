@@ -36,7 +36,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,7 +54,9 @@
     <Reference Include="MethodsFW">
       <HintPath>..\..\ClassLibraryNetFrmwrk\MethodsFW\bin\Debug\MethodsFW.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -142,6 +144,8 @@
     <Compile Include="MembsData.Designer.cs">
       <DependentUpon>MembsData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\GymCalculator.cs" />
+    <Compile Include="Services\GymValidator.cs" />
     <Compile Include="StaffData.cs">
       <SubType>Form</SubType>
     </Compile>

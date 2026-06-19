@@ -27,7 +27,7 @@ namespace GymMS
             {
                 try
                 {
-                    SetDGVRecord(null);
+                    SetDGVRecord(0);
                 }
                 catch (Exception ex)
                 {
@@ -60,6 +60,7 @@ namespace GymMS
                                 DTPJoinDate.Value = (DateTime)sdr["JoinDate"];
                                 CmbBxWorkStatus.Text = (sdr["WorkingStatus"] != DBNull.Value) ? (string)sdr["WorkingStatus"] : string.Empty;
 
+                                SetDGVRecord((int)NUDStaffId.Value);
                             }
                             else
                             {
@@ -109,10 +110,13 @@ namespace GymMS
                                     inscmd.Parameters.AddWithValue("@amnt", (int)NUDAmount.Value);
                                     inscmd.Parameters.AddWithValue("@dtins", DateTime.Today);
 
-                                    inscmd.ExecuteNonQuery();
+                                    int i = inscmd.ExecuteNonQuery();
                                     SetDGVRecord((int)NUDStaffId.Value);
-                                    MessageBox.Show($"Salary Payment for {DTPSalaryMonth.Text} Successfull", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                                    ClearFields();
+                                    if (i > 0)
+                                    {
+                                        MessageBox.Show($"Salary Payment for {DTPSalaryMonth.Text} Successfull", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                                    }
+                                                
                                 }
                             }
                             else
@@ -138,14 +142,15 @@ namespace GymMS
 
         private void ClearFields()
         {
-            NUDStaffId.Value = 0;
             TxtBxName.Clear();
             MTBPhnNum.Clear();
             CmbBxGender.SelectedIndex = -1;
             CmbBxWorkStatus.SelectedIndex = -1;
             DTPJoinDate.ResetText();
             DTPSalaryMonth.ResetText();
+            NUDStaffId.Value = 0;
             NUDAmount.Value = 0;
+            SetDGVRecord(0);
         }
 
         private void SetDGVRecord(int? staffid)

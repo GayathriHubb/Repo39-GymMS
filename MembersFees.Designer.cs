@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMembsFees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.LbHeading = new System.Windows.Forms.Label();
             this.PicBxGymPer = new System.Windows.Forms.PictureBox();
@@ -156,6 +156,7 @@
             // 
             // CmbBxGender
             // 
+            this.CmbBxGender.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CmbBxGender.Enabled = false;
             this.CmbBxGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CmbBxGender.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,6 +169,7 @@
             this.CmbBxGender.Name = "CmbBxGender";
             this.CmbBxGender.Size = new System.Drawing.Size(200, 33);
             this.CmbBxGender.TabIndex = 78;
+            this.CmbBxGender.TabStop = false;
             // 
             // TxtBxName
             // 
@@ -178,6 +180,7 @@
             this.TxtBxName.Name = "TxtBxName";
             this.TxtBxName.Size = new System.Drawing.Size(300, 37);
             this.TxtBxName.TabIndex = 77;
+            this.TxtBxName.TabStop = false;
             // 
             // label3
             // 
@@ -205,6 +208,7 @@
             // 
             // CmbBxMembStatus
             // 
+            this.CmbBxMembStatus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CmbBxMembStatus.Enabled = false;
             this.CmbBxMembStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CmbBxMembStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,6 +220,7 @@
             this.CmbBxMembStatus.Name = "CmbBxMembStatus";
             this.CmbBxMembStatus.Size = new System.Drawing.Size(150, 33);
             this.CmbBxMembStatus.TabIndex = 85;
+            this.CmbBxMembStatus.TabStop = false;
             // 
             // label2
             // 
@@ -233,12 +238,13 @@
             // 
             this.MTBPhnNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MTBPhnNum.Enabled = false;
-            this.MTBPhnNum.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MTBPhnNum.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTBPhnNum.Location = new System.Drawing.Point(158, 311);
             this.MTBPhnNum.Mask = "0000000000";
             this.MTBPhnNum.Name = "MTBPhnNum";
-            this.MTBPhnNum.Size = new System.Drawing.Size(200, 37);
-            this.MTBPhnNum.TabIndex = 87;
+            this.MTBPhnNum.Size = new System.Drawing.Size(200, 34);
+            this.MTBPhnNum.TabIndex = 8;
+            this.MTBPhnNum.TabStop = false;
             // 
             // CmbBxGymTime
             // 
@@ -256,6 +262,7 @@
             this.CmbBxGymTime.Name = "CmbBxGymTime";
             this.CmbBxGymTime.Size = new System.Drawing.Size(250, 33);
             this.CmbBxGymTime.TabIndex = 84;
+            this.CmbBxGymTime.TabStop = false;
             // 
             // label7
             // 
@@ -308,6 +315,7 @@
             // NUDAmount
             // 
             this.NUDAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NUDAmount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NUDAmount.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUDAmount.ForeColor = System.Drawing.Color.MidnightBlue;
             this.NUDAmount.Location = new System.Drawing.Point(587, 310);
@@ -322,6 +330,7 @@
             // 
             // DTPFeesMonth
             // 
+            this.DTPFeesMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DTPFeesMonth.CustomFormat = "MMMM yyyy";
             this.DTPFeesMonth.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTPFeesMonth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -369,14 +378,14 @@
             this.DGVFees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGVFees.BackgroundColor = System.Drawing.Color.Gray;
             this.DGVFees.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Texturina", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVFees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Texturina", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVFees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DGVFees.ColumnHeadersHeight = 34;
             this.DGVFees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGVFees.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -385,10 +394,11 @@
             this.DGVFees.Name = "DGVFees";
             this.DGVFees.ReadOnly = true;
             this.DGVFees.RowHeadersWidth = 40;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Bisque;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.DGVFees.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVFees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Bisque;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.DGVFees.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DGVFees.RowTemplate.Height = 28;
             this.DGVFees.Size = new System.Drawing.Size(920, 200);
             this.DGVFees.TabIndex = 6;

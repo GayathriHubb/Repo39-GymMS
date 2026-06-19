@@ -144,6 +144,7 @@
             // 
             // CmbBxGender
             // 
+            this.CmbBxGender.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CmbBxGender.Enabled = false;
             this.CmbBxGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CmbBxGender.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,6 +157,7 @@
             this.CmbBxGender.Name = "CmbBxGender";
             this.CmbBxGender.Size = new System.Drawing.Size(200, 33);
             this.CmbBxGender.TabIndex = 97;
+            this.CmbBxGender.TabStop = false;
             // 
             // TxtBxName
             // 
@@ -166,6 +168,7 @@
             this.TxtBxName.Name = "TxtBxName";
             this.TxtBxName.Size = new System.Drawing.Size(300, 37);
             this.TxtBxName.TabIndex = 96;
+            this.TxtBxName.TabStop = false;
             // 
             // label3
             // 
@@ -193,6 +196,7 @@
             // 
             // CmbBxWorkStatus
             // 
+            this.CmbBxWorkStatus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CmbBxWorkStatus.Enabled = false;
             this.CmbBxWorkStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CmbBxWorkStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,6 +208,7 @@
             this.CmbBxWorkStatus.Name = "CmbBxWorkStatus";
             this.CmbBxWorkStatus.Size = new System.Drawing.Size(150, 33);
             this.CmbBxWorkStatus.TabIndex = 107;
+            this.CmbBxWorkStatus.TabStop = false;
             // 
             // label1
             // 
@@ -225,6 +230,7 @@
             this.DTPJoinDate.Name = "DTPJoinDate";
             this.DTPJoinDate.Size = new System.Drawing.Size(220, 34);
             this.DTPJoinDate.TabIndex = 103;
+            this.DTPJoinDate.TabStop = false;
             // 
             // MTBPhnNum
             // 
@@ -235,7 +241,8 @@
             this.MTBPhnNum.Mask = "0000000000";
             this.MTBPhnNum.Name = "MTBPhnNum";
             this.MTBPhnNum.Size = new System.Drawing.Size(200, 37);
-            this.MTBPhnNum.TabIndex = 102;
+            this.MTBPhnNum.TabIndex = 8;
+            this.MTBPhnNum.TabStop = false;
             // 
             // label6
             // 
@@ -263,6 +270,7 @@
             // 
             // DTPSalaryMonth
             // 
+            this.DTPSalaryMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DTPSalaryMonth.CustomFormat = "MMMM yyyy";
             this.DTPSalaryMonth.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTPSalaryMonth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -274,6 +282,7 @@
             // NUDAmount
             // 
             this.NUDAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NUDAmount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NUDAmount.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUDAmount.ForeColor = System.Drawing.Color.MidnightBlue;
             this.NUDAmount.Location = new System.Drawing.Point(612, 302);

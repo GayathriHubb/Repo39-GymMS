@@ -73,6 +73,7 @@ namespace GymMS
         {
             TxtBxUsername.Clear();
             TxtBxPassword.Clear();
+            ChkBxPswrd.Checked = false;
         }
 
         private void BtnSignUp_Click(object sender, EventArgs e)
@@ -85,6 +86,11 @@ namespace GymMS
         private void ChkBxPswrd_CheckedChanged(object sender, EventArgs e)
         {
             TxtBxPassword.UseSystemPasswordChar = !ChkBxPswrd.Checked;
+        }
+
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
         }
     }
 }

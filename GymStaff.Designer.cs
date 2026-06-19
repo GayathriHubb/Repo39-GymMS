@@ -66,6 +66,7 @@
             // 
             // BtnReset
             // 
+            this.BtnReset.AutoSize = true;
             this.BtnReset.BackColor = System.Drawing.Color.Bisque;
             this.BtnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -81,6 +82,7 @@
             // 
             // BtnSave
             // 
+            this.BtnSave.AutoSize = true;
             this.BtnSave.BackColor = System.Drawing.Color.Bisque;
             this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
