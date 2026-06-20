@@ -39,18 +39,9 @@ Prerequisites: .NET SDK (6+ recommended), Docker (optional), a relational DB.
 
 (Replace `./src/YourApiProjectName` with the actual API project path; check the solution (.sln) root for project names.)
 
-## Running with Docker (optional)
-- If a Dockerfile / docker-compose.yml exists:
-   docker-compose up --build
 
-## API (high level)
-The API is RESTful. Typical endpoints include (adjust to actual routes):
-- POST /api/auth/register — register member
-- POST /api/auth/login — obtain JWT
-- GET /api/members
-- POST /api/classes
-- POST /api/schedules/:id/enroll
-- POST /api/attendance/checkin
+
+
 
 Refer to the controller classes in the project to see exact routes and request/response shapes.
 
